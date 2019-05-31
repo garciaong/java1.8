@@ -13,6 +13,7 @@ public class FetchingListTest {
 		studentlist.add(new Student(33, "Lucy", 22));
 		studentlist.add(new Student(44, "Sansa", 23));
 		studentlist.add(new Student(55, "Maggie", 18));
+		//[Jon, Steve, Lucy, Sansa, Maggie]
 		// Fetching student names as List
 		List<String> names = studentlist.stream().map(n -> n.name).collect(Collectors.toList());
 		System.out.println(names);

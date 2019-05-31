@@ -16,7 +16,7 @@ public class FilterMapKeyValueTest {
 		Map<Integer, String> result = hmap.entrySet().stream().filter(p -> p.getKey().intValue() <= 2) // filter by key
 				.filter(map -> map.getValue().startsWith("A")) // filter by value
 				.collect(Collectors.toMap(map -> map.getKey(), map -> map.getValue()));
-
+		//Result: {1=ABC}
 		System.out.println("Result: " + result);
 	}
 

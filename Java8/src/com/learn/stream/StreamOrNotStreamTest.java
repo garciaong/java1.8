@@ -21,6 +21,7 @@ public class StreamOrNotStreamTest {
 			if (str.length() < 6)
 				count++;
 		}
+		//There are 3 strings with length less than 6
 		System.out.println("There are " + count + " strings with length less than 6");
 	}
 
@@ -33,6 +34,7 @@ public class StreamOrNotStreamTest {
 
 		// Using Stream and Lambda expression
 		long count = names.stream().filter(str -> str.length() < 6).count();
+		//There are 3 strings with length less than 6
 		System.out.println("There are " + count + " strings with length less than 6");
 	}
 

@@ -11,6 +11,13 @@ public class ListTest {
 		fruits.add("Banana");
 		fruits.add("Pear");
 		fruits.add("Mango");
+		/**
+		 * Apple 
+		 * Orange 
+		 * Banana 
+		 * Pear 
+		 * Mango
+		 */
 		// lambda expression in forEach Method
 		fruits.forEach(str -> System.out.println(str));
 	}

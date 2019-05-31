@@ -14,6 +14,11 @@ public class FetchingSetTest {
 		studentlist.add(new Student(33, "Lucy", 22));
 		studentlist.add(new Student(44, "Sansa", 23));
 		studentlist.add(new Student(55, "Maggie", 18));
+		/**
+		 * 44 Sansa 23 
+		 * 55 Maggie 18 
+		 * 33 Lucy 22
+		 */
 		// Fetching student data as a Set
 		Set<Student> students = studentlist.stream().filter(n -> n.id > 22).collect(Collectors.toSet());
 		// Iterating Set

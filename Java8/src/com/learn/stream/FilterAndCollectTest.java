@@ -12,7 +12,10 @@ public class FilterAndCollectTest {
 		List<String> longnames = names.stream() // converting the list to stream
 				.filter(str -> str.length() > 6) // filter the stream to create a new stream
 				.collect(Collectors.toList()); // collect the final stream and convert it to a List
-
+		/**	Melisandre
+			Daenerys
+			Joffery
+		*/
 		longnames.forEach(System.out::println);
 	}
 

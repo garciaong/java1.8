@@ -6,6 +6,7 @@ import java.util.List;
 public class LambdaTest {
 
 	public static void main(String[] args) {
+		customPrint();
 		customSum();
 		customList();
 	}
@@ -13,16 +14,18 @@ public class LambdaTest {
 	private static void customPrint() {
 		String content = "What's is going on?";
 		CustomPrint print = (s) -> System.out.println(s);
+		// What's is going on?
 		print.printConsole(content);
 	}
 
 	private static void customSum() {
-		String content = "What's is going on?";
 		CustomSum sumInterface = (a, b) -> sum(a, b);
+		// 3
 		System.out.println(sumInterface.sum(1, 2));
 
 		MethodReference obj = new MethodReference();
 		CustomSum sumInterface2 = obj::sum;
+		// 3
 		System.out.println(sumInterface2.sum(1, 2));
 	}
 
@@ -37,9 +40,23 @@ public class LambdaTest {
 		list.add("Daryl");
 		list.add("Glenn");
 		list.add("Carl");
+		/**
+		 * Rick 
+		 * Negan 
+		 * Daryl 
+		 * Glenn 
+		 * Carl
+		 */
 		list.forEach(
 				// lambda expression
 				(names) -> System.out.println(names));
+		/**
+		 * Rick 
+		 * Negan 
+		 * Daryl 
+		 * Glenn 
+		 * Carl
+		 */
 		list.forEach(System.out::println);
 	}
 }

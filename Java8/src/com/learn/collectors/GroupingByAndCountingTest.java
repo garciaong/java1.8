@@ -13,7 +13,7 @@ public class GroupingByAndCountingTest {
 
 		Map<String, Long> map = names.stream()
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-
+		//{Steve=1, Jon=2, Ajeet=3}
 		System.out.println(map);
 
 	}

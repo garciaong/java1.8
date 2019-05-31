@@ -13,10 +13,19 @@ public class MapTest {
 		hmap.put(4, "Lion");
 		hmap.put(5, "Tiger");
 		hmap.put(6, "Bear");
+		/**
+		 * 1 - Monkey 
+		 * 2 - Dog 
+		 * 3 - Cat 
+		 * 4 - Lion 
+		 * 5 - Tiger 
+		 * 6 - Bear
+		 */
 		/*
 		 * forEach to iterate and display each key and value pair of HashMap.
 		 */
 		hmap.forEach((key, value) -> System.out.println(key + " - " + value));
+		/** Value associated with key 4 is: Lion */
 		/*
 		 * forEach to iterate a Map and display the value of a particular key
 		 */
@@ -25,6 +34,7 @@ public class MapTest {
 				System.out.println("Value associated with key 4 is: " + value);
 			}
 		});
+		/** Key associated with Value Cat is: 3 */
 		/*
 		 * forEach to iterate a Map and display the key associated with a particular
 		 * value

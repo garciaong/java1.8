@@ -11,12 +11,24 @@ public class ForEachOrderdTest {
 		names.add("Rick");
 		names.add("Merle");
 		names.add("Governor");
+		/**
+		 * Print using forEach 
+		 * Michonne 
+		 * Merle 
+		 * Maggie
+		 */
 		// forEach - the output would be in any order
 		System.out.println("Print using forEach");
 		names.stream().filter(f -> f.startsWith("M")).parallel().forEach(n -> System.out.println(n));
 
 		/*
 		 * forEachOrdered - the output would always be in this order: Maggie, Michonne,
+		 * Merle
+		 */
+		/**
+		 * Print using forEachOrdered 
+		 * Maggie 
+		 * Michonne 
 		 * Merle
 		 */
 		System.out.println("Print using forEachOrdered");
