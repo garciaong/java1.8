@@ -13,6 +13,7 @@ public class AveragingIntTest {
 		studentlist.add(new Student(33, "Lucy", 22));
 		studentlist.add(new Student(44, "Sansa", 23));
 		studentlist.add(new Student(55, "Maggie", 18));
+		//Average Age of Students is: 20.6
 		// Getting the average Age
 		Double avgAge = studentlist.stream().collect(Collectors.averagingInt(s -> s.age));
 		System.out.println("Average Age of Students is: " + avgAge);

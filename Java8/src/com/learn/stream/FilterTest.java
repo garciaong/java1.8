@@ -15,6 +15,7 @@ public class FilterTest {
 		//Creating another stream by filtering long names using filter()
 		Stream<String> longNames = allNames.filter(str -> str.length() > 6);
 			
+		//Melisandre Daenerys Joffery 
 		//displaying the long names
 		longNames.forEach(str->System.out.print(str+" "));
 	}

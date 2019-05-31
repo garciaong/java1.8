@@ -11,6 +11,13 @@ public class FilterNullMapTest {
 		List<Integer> list = Arrays.asList(1, 2, 3, null, 4, null, 5);
 		List<Integer> result = list.stream().map(num -> num) // here you will be having a different logic
 				.filter(n -> n != null).collect(Collectors.toList());
+		/**
+		 * 1 
+		 * 2 
+		 * 3 
+		 * 4 
+		 * 5
+		 */
 		result.forEach(System.out::println);
 
 	}

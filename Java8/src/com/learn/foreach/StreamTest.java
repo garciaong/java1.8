@@ -11,6 +11,11 @@ public class StreamTest {
 		names.add("Rick");
 		names.add("Merle");
 		names.add("Governor");
+		/**
+		 * Maggie 
+		 * Michonne 
+		 * Merle
+		 */
 		names.stream() // creating stream
 				.filter(f -> f.startsWith("M")) // filtering names that starts with M
 				.forEach(System.out::println); // displaying the stream using forEach

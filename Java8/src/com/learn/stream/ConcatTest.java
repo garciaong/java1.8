@@ -15,6 +15,7 @@ public class ConcatTest {
 		//creating two streams from the two lists and concatenating them into one
 		Stream<String> opstream = Stream.concat(alphabets.stream(), names.stream());
 			
+		//A B C Sansa Jon Arya
 		//displaying the elements of the concatenated stream
 		opstream.forEach(str->System.out.print(str+" "));
 	}
