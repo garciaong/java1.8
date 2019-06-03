@@ -49,6 +49,10 @@ public class RegularExpressionTest {
 		System.out.println(Pattern.matches("AC[0-9]{5}[A-Z]{3}", "AC12345GI"));//false
 		System.out.println(Pattern.matches("AC[0-9]{5}[A-Z]{3}", "AC12345GIGF"));//false
 		System.out.println(Pattern.matches("AC[0-9]{5}[A-Z]{3}", "AC12345GIG"));//true
+		System.out.println(Pattern.matches("\\d*", "1234"));//true
+		System.out.println(Pattern.matches("\\w*", "abvFsEW_eRR"));//true, matches a word character (alphanumeric character plus underscore)
+		System.out.println(Pattern.matches("[\\w\\s]*", "ali baba one_two"));//true, matches a word character (alphanumeric character plus underscore) & matches a whitespace character (includes tabs and line breaks)
+		System.out.println(Pattern.matches(".*", "a &*4$=S_"));//true, matches any character
 	}
 
 }
